@@ -1,0 +1,25 @@
+.pageContentWrapper {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .pageContentWrapper {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pageContentWrapper {
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    margin: 0;
+    height: 100vh;
+  }
+}

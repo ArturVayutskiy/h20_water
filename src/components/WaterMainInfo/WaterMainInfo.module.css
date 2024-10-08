@@ -1,0 +1,39 @@
+.trackerSection {
+  position: relative;
+  background-color: var(--light-green);
+  min-height: 415px;
+  border-radius: 30px;
+  background-image: image-set(
+    url(../../assets/img/bottle_for_water/bottle_for_water_mob_1x.webp) 1x,
+    url(../../assets/img/bottle_for_water/bottle_for_water_mob_2x.webp) 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 262px 335px;
+  padding: 24px 16px;
+}
+
+@media screen and (min-width: 767px) {
+  .trackerSection {
+    min-width: 704px;
+    min-height: 578px;
+    background-image: image-set(
+      url(../../assets/img/bottle_for_water/bottle_for_water_tablet_1x.webp) 1x,
+      url(../../assets/img/bottle_for_water/bottle_for_water_tablet_2x.webp) 2x
+    );
+    background-size: 374px 477px;
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .trackerSection {
+    min-width: 672px;
+    min-height: 736px;
+    background-image: image-set(
+      url(../../assets/img/bottle_for_water/bottle_for_water_desktop_1x.webp) 1x,
+      url(../../assets/img/bottle_for_water/bottle_for_water_desktop_2x.webp) 2x
+    );
+    background-size: 472px 604px;
+  }
+}

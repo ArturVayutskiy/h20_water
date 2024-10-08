@@ -1,0 +1,104 @@
+.primaryButton {
+  display: flex;
+  padding: 14px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: var(--dark-blue);
+  min-width: 140px;
+  height: 46px;
+}
+
+.primaryButtonIcon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+
+  stroke: var(--white);
+  transition: stroke var(--Animation_cubic);
+}
+
+.primaryButton:active .primaryButtonIcon,
+.primaryButton:hover .primaryButtonIcon {
+  stroke: var(--light-green);
+}
+.primaryButton:active .primaryButtonText,
+.primaryButton:hover .primaryButtonText {
+  color: var(--light-green);
+}
+
+.primaryButtonText {
+  color: var(--white);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  transition: color var(--Animation_cubic);
+}
+
+.absolute {
+  position: absolute;
+  bottom: 32px;
+  right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .absolute {
+    bottom: 64px;
+    right: 32px;
+  }
+  .primaryButton {
+    padding: 18px 30px;
+    min-width: 178px;
+  }
+  .primaryButtonIcon {
+    width: 24px;
+    height: 24px;
+  }
+  .primaryButtonText {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.secondaryButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  min-width: 124px;
+}
+
+.secondaryButtonIcon {
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-green);
+  stroke: var(--dark-blue);
+  border-radius: 50%;
+  padding: 6px;
+  transition: transform var(--Animation_cubic),
+    background-color var(--Animation_cubic), stroke var(--Animation_cubic);
+}
+
+.secondaryButton:active .secondaryButtonIcon,
+.secondaryButton:hover .secondaryButtonIcon {
+  background-color: var(--dark-blue);
+  stroke: var(--light-gray);
+}
+
+.secondaryButtonText {
+  color: var(--dark-blue);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
